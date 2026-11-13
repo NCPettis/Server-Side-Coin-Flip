@@ -17,27 +17,52 @@ const server = http.createServer(function (req, res) {
 
   }
   else if (page == '/api') {
-    if ('coinFlip' in params) {
+    // if ('coinFlip' in params) {
       if (params['coinFlip'] == 'heads') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
-        const coin = ['heads', 'tail']
-         flip = coin[Math.floor(Math.random() * coin.length)]
+        const coin = ['heads', 'tails']
+        let userInput = params['coinFlip']
+         console.log(userInput, 'coinFlip')
+        flipComputer = coin[Math.floor(Math.random() * coin.length)];
 
-        if (params['coinFlip' == flip]) {
+        if (userInput === flipComputer) {
           guess = 'YOU WIN'
         } else {
           guess = 'YOU LOSE'
         }
-        const obj = {
-          result: `${flip}`,
+        console.log(flipComputer)
+
+           const obj = {
+          result: `${flipComputer}`,
           message: `${guess}`
         }
 
         res.end(JSON.stringify(obj));
+      }else if (params['coinFlip'] == 'tails') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        const coin = ['heads','tails']
+        let userInput = params['coinFlip']
+         
+        flipComputer = coin[Math.floor(Math.random() * coin.length)];
 
-      }
+        if (userInput === flipComputer) {
+          guess = 'YOU WIN'
+        } else {
+          guess = 'YOU LOSE'
+        }
+        console.log(flipComputer)
+      
+        const obj2 = {
+          result: "Computer picked" + `${flipComputer}`,
+          message: `${guess}`
+        }
+
+        res.end(JSON.stringify(obj2));
+
+    } 
+
     }
-  } else if (page == '/css/style.css') {
+    else if (page == '/css/style.css') {
     fs.readFile('css/style.css', function (err, data) {
       res.write(data);
       res.end();

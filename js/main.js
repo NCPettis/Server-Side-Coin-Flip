@@ -5,17 +5,18 @@
 -Maybe an alert or message of outcome*/ 
 
 document.querySelector('#select').addEventListener('click', getSelection)
-
+const coinSelection = document.querySelector('select[name=coinFlip]')
 function getSelection(){
 
-const coinSelection = document.querySelector('#coinFlip').value
-
-fetch(`/api?coinFlip=${coinSelection}`)
+// const coinSelection = document.querySelector('#coinFlip').value
+console.log(coinSelection.value)
+fetch(`/api?coinFlip=${coinSelection.value}`)
 .then(response => response.json())
 .then((data) => {
     console.log(data)
     document.querySelector('#winner').textContent = data.result
-})
+    document.querySelector('#message').textContent = data.message
+});
 
 
 }

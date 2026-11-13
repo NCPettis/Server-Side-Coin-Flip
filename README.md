@@ -1,22 +1,34 @@
-# 💸 Week08 Bootcamp2019a Project: Node Coin Flip Game
+# 💸 Node Coin Flip Game
 
-### Goal: Create a simple web application that uses the fs and http modules. Use http to create the server and fs to read your html file. Include vanilla ES6 js in a script tag at the bottom of your html file. Try creating a coin flip guessing game
+## Project Description
 
-### How to submit your code for review:
+A coin flip game where users will try to predict what the computer will randomize.
+## Tech Stack
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+- **HTML** 
+- **CSS**
+- **JavaScript**
+- **Node.js**
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## How to Run or View It Locally
+
+1. Clone or download the repository.
+2. Install the dependancies with `npm install`
+3. Start the server using `node server.js`
+4. Open local development server 8000.
+
+
+
+
+
+## Screenshots and Demo
+Live link: 
+
+### Application Interface
+
+![Cass Cards application interface](img/Cass-cards-screenshot.png)
+![Cass Cards application interface](img/Cass-cards-screenshot(2).png)
+
+
+The interface displays a dropdown menu to select Heads or Tails. Once selection is made the Computer's pick will display along with a win/lose message.  
+
