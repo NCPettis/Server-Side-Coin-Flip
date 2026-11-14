@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Coin Flip</title>
 </head>
 <body>
+<header>
 <h1>THIS IS A COIN FLIP GAME</h1>
 <p> Use the drop down to pick heads or tails. Can you predict what the computer will pick?</p>
+</header>
 
 <section class="gamebox">
 <select name="coinFlip" id="coinFlip">
   <option value="heads">heads</option>
   <option value="tails">tails</option>
 </select>
-<button id="select">Confirm Selection</button>
+<button id="select">submit</button>
 
 <h3 id="winner"></h3>
 <p id="message"></p>

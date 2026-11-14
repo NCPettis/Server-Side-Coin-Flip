@@ -26,8 +26,8 @@ Live link:
 
 ### Application Interface
 
-![Cass Cards application interface](img/Cass-cards-screenshot.png)
-![Cass Cards application interface](img/Cass-cards-screenshot(2).png)
+![application interface](CoinFlipScreenshot.png)
+
 
 
 The interface displays a dropdown menu to select Heads or Tails. Once selection is made the Computer's pick will display along with a win/lose message.  

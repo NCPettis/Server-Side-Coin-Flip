@@ -53,7 +53,7 @@ const server = http.createServer(function (req, res) {
         console.log(flipComputer)
       
         const obj2 = {
-          result: "Computer picked" + `${flipComputer}`,
+          result: `${flipComputer}`,
           message: `${guess}`
         }
 
