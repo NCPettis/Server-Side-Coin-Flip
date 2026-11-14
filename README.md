@@ -22,7 +22,7 @@ A coin flip game where users will try to predict what the computer will randomiz
 
 
 ## Screenshots and Demo
-Live link: 
+Live link: https://server-side-coin-flip.onrender.com/
 
 ### Application Interface
 
